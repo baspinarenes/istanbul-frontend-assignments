@@ -25,11 +25,7 @@ const App = () => {
           <Login setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} />
         </Route>
         <Route path="/">
-          {!isLoggedIn ? (
-            <Redirect to="/login" />
-          ) : (
-            <TheLayout />
-          )}
+          {!isLoggedIn ? <Redirect to="/login" /> : <TheLayout />}
         </Route>
       </Switch>
     </Router>

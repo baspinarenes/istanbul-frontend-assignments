@@ -37,17 +37,20 @@ const Login = ({ isLoggedIn, setIsLoggedIn }) => {
     if (isUserMatched) {
       setIsLoggedIn(true);
       localStorage.setItem("isLoggedIn", JSON.stringify(true));
-      localStorage.setItem("user", JSON.stringify(
-        userList.find((user) => (
-          user.username === currentUser.username
-        ))
-      ));
+      localStorage.setItem(
+        "user",
+        JSON.stringify(
+          userList.find((user) => user.username === currentUser.username)
+        )
+      );
+    } else {
+      alert("Kullanıcı bulunamadı.");
     }
   };
 
-  return isLoggedIn 
-    ? <Redirect to="/" /> 
-    :(
+  return isLoggedIn ? (
+    <Redirect to="/" />
+  ) : (
     <div className="login-wrapper">
       <form className="login-form" action="" onSubmit={handleSubmitLoginForm}>
         <div className="login-icon-wrapper">
@@ -76,7 +79,7 @@ const Login = ({ isLoggedIn, setIsLoggedIn }) => {
         <button className="login-submit-button">Login</button>
       </form>
     </div>
-    );
+  );
 };
 
 export default Login;
