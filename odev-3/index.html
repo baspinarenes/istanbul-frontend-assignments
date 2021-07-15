@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation Ödev</title>
+</head>
+
+<body>
+    <form action="" id="form1" novalidate>
+        <h1>FORM VALIDATION ODEVI</h1>
+        <div class="form-body">
+            <div class="container">
+                <label for="username">Kullanıcı Adı :</label>
+                <span id="username-error" class="error"></span>
+                <input id="username" type="text" placeholder="Kullanıcı Adı" required>
+            </div>
+            <div class="container">
+                <label for="password">Parola :</label>
+                <div id="password-error" class="error"></div>
+                <input id="password" type="password" placeholder="Şifre" required>
+            </div>
+            <div class="container">
+                <label for="email">E-Mail :</label>
+                <div id="email-error" class="error"></div>
+                <input id="email" type="email" placeholder="E-mail" required>
+            </div>
+            <div class="container">
+                <div>
+                    <input id="isadult" type="checkbox" required>
+                    <label for="isadult">18 yaşından büyüğüm</label>
+                </div>
+                <div id="isadult-error" class="error"></div>
+            </div>
+            <div>
+                <button id="submit">Gönder</button>
+            </div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>

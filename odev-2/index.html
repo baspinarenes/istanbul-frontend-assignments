@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafta 2 Gun 2</title>
+    
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <h1 class="page-header">Contact List</h1>
+    <main class="container">
+        <div class="filter-section">
+            <input type="text" class="search-text" placeholder="Enter first character to search by name:" maxlength="1">
+            <div class="active-checkbox-container">
+                <span>Active</span>
+                <label class="switch">
+                    <input type="checkbox" class="active-checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="adult-checkbox-container">
+                <span>Adult</span>
+                <label class="switch">
+                    <input type="checkbox" class="adult-checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button class="filter-button">Filter</button>
+            <button class="sorting-button">Sort</button>
+            <button class="show-button">Show Unfiltered</button>
+        </div>
+        <div class="filter-summary">
+            <strong>100</strong> değerden filtre sonucunda <strong>10</strong> öğe elde edildi.
+        </div>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th style="width: 15%;">Name</th>
+                    <th style="width: 15%;">Number</th>
+                    <th style="width: 35%;">Email</th>
+                    <th style="width: 5%;">Age</th>
+                    <th style="width: 20%;">City</th>
+                    <th style="width: 10%;">Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table> 
+    </main>
+    <footer>
+        &#169; Made by enesbaspinar for İstanbul Frontend Bootcamp
+    </footer>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
